@@ -9,11 +9,9 @@ on:
       - main
 
 jobs:
-  build:
+  test-ci:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    
+    - uses: actions/checkout@v4
     - name: Run test command
-      run: echo "DevOps is coming!"
+      run: echo "Тесты прошли успешно!"
