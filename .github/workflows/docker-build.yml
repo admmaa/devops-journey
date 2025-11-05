@@ -16,7 +16,7 @@ jobs:
         run: docker --version
 
       - name: Build Docker image
-        run: | docker build -t devops-app .
+        run: docker build -t devops-app .
 
       - name: Run container test
         run: docker run --rm devops-app
